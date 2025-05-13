@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: docker-web-app
+    ports:
+      - "3000:3000"
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app
+      
+    environment:
+      NODE_ENV: development
+    restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/multiplication?n1=3&n2=5"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+      

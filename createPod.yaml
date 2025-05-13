@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: docker-web-app
+  labels:
+    app: docker-web-app
+spec:
+  containers:
+    - name: docker-web-app
+      image: pasindufdo98/docker_web_app
+      ports:
+        - containerPort: 3000
