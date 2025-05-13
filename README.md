@@ -1,5 +1,5 @@
 
-# 📦 Docker Build and Deploy Steps
+#  Docker Build and Deploy Steps
 
 ## 1. Build and Push Docker Image
 
@@ -82,7 +82,7 @@ Invoke-RestMethod -Method POST -Uri http://localhost:30080/create `
 
 ## Read Users
 
-Open in your browser:
+Open in browser:
 
 ```
 http://localhost:30080/read
@@ -90,7 +90,7 @@ http://localhost:30080/read
 
 ---
 
-## Update User
+## Update User(in powershell)
 
 ```
 Invoke-RestMethod -Method PUT -Uri http://localhost:30080/update `
@@ -100,7 +100,7 @@ Invoke-RestMethod -Method PUT -Uri http://localhost:30080/update `
 
 ---
 
-## Delete User
+## Delete User(in powershell)
 
 ```
 Invoke-RestMethod -Method DELETE -Uri http://localhost:30080/delete `
